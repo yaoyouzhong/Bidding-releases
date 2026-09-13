@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">标书工作台</title><desc id="desc">让每一次投标复核，都有据可查。</desc>
+<rect width="1200" height="360" rx="14" fill="#101f35"/>
+<path d="M60 56V302" stroke="#bca478" stroke-width="3"/>
+<text x="92" y="93" fill="#bca478" font-family="Segoe UI,Arial,sans-serif" font-size="16">Biaoshu · Windows</text>
+<text x="88" y="170" fill="#f4f1ea" font-family="Noto Serif SC,SimSun,serif" font-size="58" font-weight="600" letter-spacing="5">标书工作台</text>
+<text x="92" y="219" fill="#d4deea" font-family="Microsoft YaHei,Noto Sans SC,sans-serif" font-size="22">让每一次投标复核，都有据可查。</text>
+<text x="92" y="290" fill="#9daec2" font-family="Microsoft YaHei,Noto Sans SC,sans-serif" font-size="16">本地材料整理　 /　 文件检查　 /　 人工复核与归档</text>
+<g transform="translate(815 50)">
+<rect x="61" width="198" height="240" rx="4" fill="#1a2d47" stroke="#42516a"/>
+<rect x="32" y="22" width="198" height="240" rx="4" fill="#24354b" stroke="#657083"/>
+<rect y="44" width="198" height="240" rx="4" fill="#f4f1ea"/>
+<path d="M24 68V258" stroke="#bca478" stroke-width="2"/>
+<rect x="43" y="77" width="107" height="7" rx="2" fill="#24354b"/>
+<path d="M43 103H171M43 116H146" stroke="#adb4bb" stroke-width="3"/>
+<path d="M43 153H119M43 187H119M43 221H119" stroke="#788492" stroke-width="4"/>
+<g fill="none" stroke="#557565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m144 150 6 6 12-13M144 184l6 6 12-13M144 218l6 6 12-13"/></g>
+<path d="M174 264H294V196" fill="none" stroke="#bca478"/><circle cx="294" cy="191" r="4" fill="#bca478"/>
+</g></svg>
