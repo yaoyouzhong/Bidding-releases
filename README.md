@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.3.0/Biaoshu_0.3.0_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -52,8 +52,8 @@
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.3.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.3.0/Biaoshu_0.3.0_x64-setup.exe) |
-| **MSI** | 机器级安装或集中部署，使用安装包升级 | [下载 0.3.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.3.0/Biaoshu_0.3.0_x64.msi) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64-setup.exe) |
+| **MSI** | 机器级安装或集中部署，使用安装包升级 | [下载 0.4.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64.msi) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -61,10 +61,14 @@
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.3.0/SHA256SUMS.txt) 核对文件完整性。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/SHA256SUMS.txt) 核对文件完整性。
 - EXE 与 MSI 选择一种即可。
 
 </details>
+
+## OCR 模型
+
+在应用设置点击“下载模型”，或[下载完整离线模型包](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/models-v1-offline.zip)后点击“导入模型”，无需解压。已有模型可跨程序升级复用。
 
 ## 自动更新
 
@@ -76,7 +80,7 @@
 
 ## 本次版本
 
-**0.3.0** 集中改进人员证件分类、混合 PDF / DOCX 识别及大批 OCR 并发校准，并接入 Chrome 官网查询和应用内更新。
+**0.4.0** 将 OCR 模型与程序分开分发，减少安装和升级体积；新增模型下载与导入、操作反馈和版本显示，并修复验证码过期及重复提交问题。
 
 [阅读完整版本说明 →](RELEASE_NOTES.md)
 
