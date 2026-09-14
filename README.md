@@ -65,7 +65,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 模型修复文件已可用；本版完整安装包和程序更新包暂请使用 GitHub，Gitee 大文件同步尚未完成。
+Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法容纳本版完整安装包和程序更新包；程序下载目前请使用 GitHub。
 
 **1. 安装工作台**  
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
