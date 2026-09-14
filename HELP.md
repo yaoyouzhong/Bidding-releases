@@ -2,13 +2,19 @@
 
 [返回产品主页](README.md) · [下载程序](https://github.com/yaoyouzhong/Bidding-releases/releases/latest)
 
+## GitHub 和 Gitee 分别提供什么？
+
+程序安装包和程序更新统一通过 [GitHub 发布页](https://github.com/yaoyouzhong/Bidding-releases/releases/latest)提供。Gitee 同步展示功能介绍与使用帮助，并提供[模型修复文件](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)，不提供程序安装包，也不作为程序更新备用地址。
+
+如果暂时无法访问 GitHub，Gitee 的说明和模型修复入口仍可使用，但不能代替程序下载。
+
 ## 安装前需要准备什么？
 
 使用 Windows 10 / 11 64 位电脑，首次安装请保持联网。企业信用和学信网查询需要 Google Chrome；需要扫码或人工验证时，按官网提示完成。
 
 ## 图片和扫描文件识别需要另行安装吗？
 
-识别所需文件已随安装包提供，正常安装后无需单独下载。如果应用提示识别文件缺失，可在应用设置中点击“下载模型”修复；无法在线修复时，可按[离线修复说明](TECHNICAL_NOTES.md#ocr-模型)使用“导入模型”。
+识别所需文件已随安装包提供，正常安装后无需单独下载。如果应用提示识别文件缺失，可在应用设置中点击“下载模型”修复；无法在线修复时，可从 [Gitee 模型修复页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)下载对应文件，再按[离线修复说明](TECHNICAL_NOTES.md#ocr-模型)使用“导入模型”。
 
 ## AI 功能怎样开启？
 

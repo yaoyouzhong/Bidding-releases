@@ -19,6 +19,13 @@
 
 <p align="center"><sub>Windows 10 / 11 · x64 &nbsp;&nbsp; | &nbsp;&nbsp; 本地资料管理 &nbsp;&nbsp; | &nbsp;&nbsp; AI 增强按需开启</sub></p>
 
+<p align="center">
+  <a href="HELP.md">使用帮助</a> &nbsp; · &nbsp;
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
+</p>
+
+本主页在 GitHub 与 Gitee 同步展示。**程序下载与更新仅通过 GitHub 提供**；Gitee 保留功能介绍、使用帮助和模型修复下载。安装包已内置识别所需文件，正常使用无需另行下载模型。
+
 ---
 
 > **使用用途：仅供学习与交流，不用于任何商业用途。**
