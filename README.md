@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/Biaoshu_0.4.1_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -25,21 +25,45 @@
 > 本项目免费提供，用于学习和交流文档处理、OCR 与信息核对技术；请勿用于商业投标、收费服务或其他商业活动。
 > 第三方组件仍按各自许可证提供；本声明不替代其许可，也不表示已取得第三方额外授权。
 
-## 把复核工作，组织成一条清晰的流程
+## 工作台一览
 
-标书工作台将材料整理、文件检查、问题处理与归档衔接起来。识别结果保留原件依据，机器发现交由人工核对，让材料、问题与处理记录能够对应起来。
+![当前项目管理界面，使用合成演示资料](assets/workspace-demo.png)
 
-| 工作环节 | 可以完成的工作 |
+<sub>当前前端的隔离渲染截图，项目名称与单位均为合成演示数据，不包含真实业务资料。</sub>
+
+## 一条完整的复核流程
+
+不必在散落的文件、表格和备注中来回寻找。围绕同一个项目整理材料、运行检查、处理问题，再由人工确认终审。
+
+![从招标文件到归档交付的五步流程](assets/workflow.svg)
+
+## 企业、人员与项目资料，各有归属
+
+企业证照和人员材料集中整理，在具体项目中使用；原始文件继续保留，识别结果可回到原件核对。
+
+![企业资料、人员资料与项目文件的组织方式](assets/materials.svg)
+
+| 你要完成的事 | 工作台如何帮助你 |
 | :--- | :--- |
-| **企业与人员资料** | 整理证照、资质和人员证件，使用本地 OCR 辅助识别与复核。 |
-| **官网查询与留存** | 通过专用 Chrome 会话查询企业信用、核验学历，按查询流程保存证据。 |
-| **投标文件检查** | 检查格式与完整性，核对招标要求的响应情况，并保留问题来源。 |
-| **多公司文件查重** | 比较不同公司的投标文件，查看命中内容与原件证据，逐项人工核查。 |
-| **问题处理与交付** | 处理检查问题，完成人工终审，将文件与复核记录归档留存。 |
+| 整理企业与人员材料 | 管理证照、资质和证件，本地 OCR 辅助提取，保留人工复核。 |
+| 查询并留存官网结果 | 专用浏览器访问企业信用、学历核验官网，按流程保存查询证据。 |
+| 检查当前投标文件 | 格式与完整性检查、招标要求响应核对各自保留结果。 |
+| 比较多家公司文件 | 查看内容命中、公司名称交叉等线索，展开双方原件证据。 |
+| 处理问题与归档 | 逐项处理发现，人工终审后生成包含原件和复核记录的归档。 |
 
-> **判断由人作出，依据保留下来。** 机器检查提供复核线索，不自动认定得分或违规；归档也不代表已向招标方递交。
+## 不只给出提醒，还能查看依据
+
+从检查项找到来源，结合当前投标响应和原件进行复核。机器提示供人工判断，不自动认定合规、计分或串标成立。
+
+![从招标要求与投标响应回到人工复核的证据示意](assets/evidence.svg)
+
+## 本机资料与可选 AI
+
+**材料默认保存在本机，AI 增强默认关闭。** 开启相应用途后才发送相关内容；官网查询则访问对应官方网站。模型识别结果和机器检查不能替代人工终审。
 
 ## 开始使用
+
+[国内下载 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases) · [备用下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases)
 
 **1. 安装工作台**  
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
@@ -52,8 +76,7 @@
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64-setup.exe) |
-| **MSI** | 机器级安装或集中部署，使用安装包升级 | [下载 0.4.0](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/Biaoshu_0.4.0_x64.msi) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.1](https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/Biaoshu_0.4.1_x64-setup.exe) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -61,14 +84,27 @@
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.0/SHA256SUMS.txt) 核对文件完整性。
-- EXE 与 MSI 选择一种即可。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/SHA256SUMS.txt) 核对文件完整性。
 
 </details>
 
 ## OCR 模型
 
-在应用设置点击“下载模型”，或[下载完整离线模型包](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/models-v1-offline.zip)后点击“导入模型”，无需解压。已有模型可跨程序升级复用。
+安装包已内置 Beta 验证码识别和文档检测、识别、方向共 4 个 OCR 模型，安装后可直接进行本地识别。应用设置保留“下载模型”和“导入模型”，用于缺失或损坏时修复；模型完整时显示已就绪。
+
+如需离线修复，下载下列原始 `.onnx` 文件，点击“导入模型”选择一个或多个文件。旧版模型附件继续保留，本版只使用以下四个。
+
+<details>
+<summary><strong>四个模型修复文件</strong></summary>
+
+| 用途 | 文件 | 国内下载 | 备用下载 |
+| :--- | :--- | :--- | :--- |
+| 验证码 Beta | `common.onnx` | [Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/common.onnx) | [GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/common.onnx) |
+| 文档文字检测 | `PP-OCRv6_det_small.onnx` | [Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/PP-OCRv6_det_small.onnx) | [GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/PP-OCRv6_det_small.onnx) |
+| 文档文字识别 | `PP-OCRv6_rec_small.onnx` | [Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/PP-OCRv6_rec_small.onnx) | [GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/PP-OCRv6_rec_small.onnx) |
+| 文字方向 | `ch_ppocr_mobile_v2.0_cls_mobile.onnx` | [Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/ch_ppocr_mobile_v2.0_cls_mobile.onnx) | [GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases/download/models-v1/ch_ppocr_mobile_v2.0_cls_mobile.onnx) |
+
+</details>
 
 ## 自动更新
 
@@ -76,19 +112,22 @@
 
 启动后自动检查新版本。发现更新时，应用设置中显示提醒；查看说明、保存工作并确认后，点击 **「一键升级」**，程序会下载并验证签名，安装完成后重启。
 
-更新前保留旧版备份，新版启动失败时尝试恢复旧版。后台任务运行期间不能安装更新；机器级 MSI 安装，以及涉及数据库结构变化的版本，使用另行验证的完整安装包升级。
+更新前保留旧版备份，新版启动失败时尝试恢复旧版。后台任务运行期间不能安装更新；历史机器级 MSI 安装，以及涉及数据库结构变化的版本，使用另行验证的完整安装包升级。
 
-## 本次版本
+## 当前版本
 
-**0.4.0** 将 OCR 模型与程序分开分发，减少安装和升级体积；新增模型下载与导入、操作反馈和版本显示，并修复验证码过期及重复提交问题。
+**0.4.1** 内置完整 OCR 模型，安装后无需单独下载；更新优先使用 Gitee，失败后尝试 GitHub，始终验证更新包签名。下载模型与导入模型入口继续保留。
+
+GitHub 保留历史版本；Gitee 以最新版程序附件为主。新包验证通过后才切换更新清单，容量允许时先上传再清理。
 
 [阅读完整版本说明 →](RELEASE_NOTES.md)
 
 <details>
 <summary><strong>已验证范围与当前边界</strong></summary>
 
-- EXE 与 MSI 分别通过全新 Windows Sandbox 的 **22 项安装生命周期检查、15 项合成业务检查**。
-- 应用内更新通过正常升级、无效程序恢复、启动失败恢复及中断恢复 **4 个场景**，逐项核对原项目数据库未变化。
+- 0.4.1 安装包内置四个固定模型，冻结引擎模型检查与 Beta 验证码识别通过；安装包和签名更新包内的程序文件一致。
+- v0.4.0 EXE 与 MSI 分别完成独立 Windows Sandbox 安装生命周期与合成业务验证。
+- v0.3.0 → v0.4.0 的正常升级与中断恢复已验证，并核对项目数据库保持不变。
 - 本轮不包含无 WebView2 的离线安装、同版本覆盖安装、真实个人学信网查询及跨机器 GPU 性能验收。
 
 </details>
