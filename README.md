@@ -17,6 +17,14 @@
   <a href="#自动更新">自动更新</a>
 </p>
 
+## 50 秒了解标书工作台
+
+[![播放标书工作台宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
+
+**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro.mp4)
+
+50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
+
 <p align="center"><sub>Windows 10 / 11 · x64 &nbsp;&nbsp; | &nbsp;&nbsp; 本地解析与文字识别 &nbsp;&nbsp; | &nbsp;&nbsp; AI 增强按需开启</sub></p>
 
 <p align="center">
