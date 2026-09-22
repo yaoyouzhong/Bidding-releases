@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/Biaoshu_0.4.1_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -32,7 +32,7 @@
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
-本主页在 GitHub 与 Gitee 同步展示。**程序下载与更新仅通过 GitHub 提供**；Gitee 保留功能介绍、使用帮助和模型修复下载。安装包已内置识别所需文件，正常使用无需另行下载模型。
+本主页在 GitHub 与 Gitee 同步展示。**程序下载与更新仅通过 GitHub 提供**；Gitee 保留功能介绍、使用帮助和模型修复下载。0.4.2 使用精简安装包，识别模型可按需下载或离线导入；已有匹配模型继续复用。
 
 ---
 
@@ -52,7 +52,7 @@
 
 ## 本地就能用，AI 按需增强
 
-**无需配置 AI 服务，也能开始整理、编制和检查。** 文档解析、扫描件文字识别在本机完成；批量导入与资料归档、按已确认模板填充并生成简历、证件日期提醒及已有规则检查，都有本地能力支持。识别所需文件已内置，读不准或缺失的信息可对照原件补充。
+**无需配置 AI 服务，也能开始整理、编制和检查。** 文档解析、扫描件文字识别在本机完成；批量导入与资料归档、按已确认模板填充并生成简历、证件日期提醒及已有规则检查，都有本地能力支持。首次识别前请准备对应模型，读不准或缺失的信息可对照原件补充。
 
 **需要进一步理解复杂内容时，再开启 AI。** AI 在本地处理的基础上，辅助理解不同写法的招标要求、不同版式的材料，以及要求和响应之间的关系；这些增强功能需要配置模型并开启相应用途。未开启 AI 时，继续使用本地功能，不会因此无法使用整个工作台。
 
@@ -150,15 +150,17 @@
 
 ## 开始使用
 
-在 Windows 10 / 11 64 位电脑上下载安装包，首次安装请保持联网。文字识别所需文件已内置，无需另行配置，也不必先接入 AI；企业信用查询和学信网学历核验需要 Google Chrome。
+在 Windows 10 / 11 64 位电脑上下载安装包，首次安装请保持联网。文字识别模型可在应用设置下载或离线导入，无需接入 AI；企业信用查询和学信网学历核验需要 Google Chrome。
 
 1. **建立资料基础**：创建投标人和项目，导入企业、人员及案例资料，核对后归档。
 2. **按本次要求编制**：导入招标文件，确认要求和模板，选择本次使用的材料与人员。
 3. **检查并处理问题**：对照原件复核发现，完成整改与人工终审，再保存交付归档。
 
-[下载 Windows 版 0.4.1 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/Biaoshu_0.4.1_x64-setup.exe) · [安装与使用帮助](HELP.md)
+[下载 Windows 版 0.4.2 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe) · [安装与使用帮助](HELP.md)
 
 ## 自动更新
+
+0.4.1 及以前版本需手动安装一次 0.4.2，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
 
 发现新版本时，应用会提示。保存工作并等待当前任务结束后，在应用设置中点击 **“一键升级”**，完成后程序自动重启。
 

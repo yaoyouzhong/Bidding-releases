@@ -21,7 +21,7 @@ Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法�
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.1](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/Biaoshu_0.4.1_x64-setup.exe) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.2](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -29,13 +29,17 @@ Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法�
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/SHA256SUMS.txt) 核对文件完整性。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/SHA256SUMS.txt) 核对文件完整性。
 
 </details>
 
 ## OCR 模型
 
-安装包已内置 Beta 验证码识别和文档检测、识别、方向共 4 个 OCR 模型，安装后可直接进行本地识别。应用设置保留“下载模型”和“导入模型”，用于缺失或损坏时修复；模型完整时显示已就绪。
+0.4.2 不再内嵌模型。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
+
+模型默认保存在 `%LOCALAPPDATA%\BiaoShu\models`，与程序安装目录分离。模型按哈希校验和复用，新模型使用独立目录并保留旧模型。程序安装到自选目录不会搬动模型；自选目录超出应用内更新支持范围时，请手动运行安装包升级。
+
+0.4.1 及以前版本只支持旧 ZIP 更新格式，需手动安装本版一次；旧更新清单继续保留原兼容版本。
 
 如需离线修复，下载下列原始 `.onnx` 文件，点击“导入模型”选择一个或多个文件。旧版模型附件继续保留，本版只使用以下四个。
 
@@ -61,7 +65,7 @@ Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法�
 
 ## 当前分发安排与验证记录
 
-**0.4.1** 内置完整 OCR 模型，安装后无需单独下载；程序安装包、更新清单和签名更新包目前由 GitHub 提供，更新时验证包签名。下载模型与导入模型入口继续保留。
+**0.4.2** 使用精简 EXE 和独立模型包；程序安装包与 EXE 更新清单由 GitHub 提供，更新时验证包签名。模型可下载或离线导入，旧模型修复文件继续保留。
 
 GitHub 保留程序历史版本。Gitee 目前仅同步使用说明与模型修复文件，不作为程序发布源或更新备用源。
 
@@ -70,7 +74,8 @@ GitHub 保留程序历史版本。Gitee 目前仅同步使用说明与模型修�
 <details>
 <summary><strong>已验证范围与当前边界</strong></summary>
 
-- 0.4.1 安装包内置四个固定模型，冻结引擎模型检查与 Beta 验证码识别通过；安装包和签名更新包内的程序文件一致。
+- 0.4.2 精简包的离线模型导入、OCR/验证码推理、重启持久化、旧库升级及安装包内容核对通过；本次未重新执行干净机安装/卸载或完整签名更新回滚。
+- 历史 0.4.1 内置四个固定模型，冻结引擎模型检查与 Beta 验证码识别通过。
 - v0.4.0 EXE 与 MSI 分别完成独立 Windows Sandbox 安装生命周期与合成业务验证。
 - v0.3.0 → v0.4.0 的正常升级与中断恢复已验证，并核对项目数据库保持不变。
 - 本轮不包含无 WebView2 的离线安装、同版本覆盖安装、真实个人学信网查询及跨机器 GPU 性能验收。
