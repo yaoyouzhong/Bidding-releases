@@ -88,7 +88,7 @@ GitHub 保留程序历史版本。Gitee 目前仅同步使用说明与模型修�
 <details>
 <summary>第三方许可证与源码资料</summary>
 
-Release 中的 `licenses.zip` 提供第三方许可证原文，`sources.zip` 仅包含第三方库源码及构建参考，不是标书工作台业务源码。相关材料也位于安装目录的 `third-party.zip`，随程序更新或恢复。
+Release 中的 `licenses.zip` 提供第三方许可证原文，`sources.zip` 仅包含第三方库源码及构建参考，不是标证 · 投标编审系统业务源码。相关材料也位于安装目录的 `third-party.zip`，随程序更新或恢复。
 
 第三方组件按各自许可证提供，相应权利不受本程序其他说明限制。GEOS 的使用与修改权利见对应说明，普通用户无需替换该库。
 

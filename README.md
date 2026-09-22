@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="标书工作台 — 让每一次投标复核，都有据可查。" />
+  <img src="assets/hero.svg" width="100%" alt="标证 · 投标编审系统 — 让每一次投标复核，都有据可查。" />
 </p>
 
 <p align="center">
@@ -17,9 +17,11 @@
   <a href="#自动更新">自动更新</a>
 </p>
 
-## 50 秒了解标书工作台
+## 50 秒了解标证 · 投标编审系统
 
-[![播放标书工作台宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
+演示视频使用旧名称“标书工作台”，主要流程供参考。
+
+[![播放标证 · 投标编审系统宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
 
 **[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro.mp4)
 
@@ -44,7 +46,7 @@
 
 ## 从准备到交付，把投标工作接起来
 
-反复找资料、换格式、核对要求、追踪修改，常常占去编制方案的大量时间。标书工作台把这些工作放进同一个项目：复用企业、人员与案例资料，按本次招标格式编制，再围绕要求和证据检查、处理与归档。
+反复找资料、换格式、核对要求、追踪修改，常常占去编制方案的大量时间。标证 · 投标编审系统把这些工作放进同一个项目：复用企业、人员与案例资料，按本次招标格式编制，再围绕要求和证据检查、处理与归档。
 
 下面选四个场景，沿着一次操作的前后过程，看工作台怎样减少重复劳动、把待处理问题交到人面前。
 
@@ -180,4 +182,4 @@
 
 [第三方组件说明](THIRD_PARTY_NOTICES.md) · [技术与维护说明](TECHNICAL_NOTES.md)
 
-<p align="center"><sub>标书工作台 · 整理有序，复核有据。</sub></p>
+<p align="center"><sub>标证 · 投标编审系统 · 整理有序，复核有据。</sub></p>
