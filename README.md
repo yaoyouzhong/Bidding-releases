@@ -22,9 +22,11 @@
 
 2026 年 9 月更新：基于 0.4.2 界面制作，使用合成演示资料。
 
-[![播放标证 · 投标编审系统宣传片](videos/poster-0.4.2.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
+直接在本页点击播放，支持暂停、拖动进度、音量和全屏。
 
-**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.2.mp4)
+https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
+
+**[独立网页播放器 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.2.mp4)
 
 50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
 
