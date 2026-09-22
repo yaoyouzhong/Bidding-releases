@@ -1,0 +1,11 @@
+{
+  "version": "0.4.1",
+  "notes": "# 标书工作台 0.4.1\r\n\r\n- 安装包内置 Beta 验证码识别与文档 OCR 的四个模型，首次识别无需单独下载。\r\n- 不再内置或自动下载旧版验证码备用模型及汉字位置检测模型；保留原有验证码五次重试与人工处理流程。\r\n- 保留“下载模型”和“导入模型”，模型完整时显示已就绪，缺失缓存优先从内置模型恢复。\r\n- 更新清单及更新包优先 Gitee，失败后使用 GitHub；固定公钥签名校验与安装前任务保护保持有效。\r\n- 公开主页增加界面展示与流程、材料组织及证据核对图解。\r\n\r\n源码保持私有；公开仓库只提供程序与分发资料。仅供学习交流，不用于商业用途。第三方组件按各自许可证提供。",
+  "pub_date": "2026-09-14T03:06:45Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.1/biaoshu_0.4.1_windows-x86_64.zip",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcnhHdlUrRnhJdTIxSS9pTFVDU3BVdDZDTkVyS0cxRkkxaUhpRDh4RThJaElWTytKSnRsR1FueUNVQ2ZRZ2dKY2JQS2hEQ1czdWN0WllXWkJPeG1NSFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MzU1MTk3CWZpbGU6Ymlhb3NodV8wLjQuMV93aW5kb3dzLXg4Nl82NC56aXAKN3oydCt1TmZVZkpIZHlLbERwaGxUZnh3YTVnd0tLd1VUZWZRdjlOVU1QSUNCUlk2WVRndjBjdFFCNk5NNFdocVQ1VFRSYXVQQkF3TTFFVU9sUWZRQ2c9PQo="
+    }
+  }
+}

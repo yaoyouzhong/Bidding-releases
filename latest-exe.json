@@ -1,0 +1,11 @@
+{
+  "version": "0.4.2",
+  "notes": "# 标证 · 投标编审系统 0.4.2\r\n\r\n本版改为精简 EXE 安装包与独立模型包，安装包约 116.13 MiB。已有匹配模型可继续复用，程序升级无需重复下载模型。\r\n\r\n## 本次重新发布\r\n\r\n本次重新发布 0.4.2，增加 Gitee 分卷手动安装入口，并修复更新清单和完整安装包下载的双源回退。已安装旧 0.4.2 的用户不会因版本号相同收到升级提示，请手动安装本次制品。Gitee 分卷仅支持手动合并安装，应用内更新仍依赖完整 EXE 下载，当前完整 EXE 由 GitHub 提供。\r\n\r\n## 更新内容\r\n- 产品更名为“标证 · 投标编审系统”，简称“标证”；原“标书工作台”的项目、设置、模型缓存和安装登记继续沿用。旧版用户升级后保留原安装目录，新用户默认安装到当前用户目录下的“标证”。\r\n- 模型导入支持 ZIP 包和 ONNX 文件，可同时选择多个文件；增加缺模型、部分就绪和实际保存目录提示。\r\n- 模型独立保存在当前用户目录，更换程序安装位置不影响缓存复用；模型更新保留旧版本。\r\n- 人员证件支持单字段复核，人员列表按需加载图片；企业证书支持更新并保留旧原件和历史记录。\r\n- 简化应用设置中的重复信息，优化操作人署名及来源页码布局。\r\n- 新版使用同一个 EXE 安装包进行手动安装和后续应用内更新，保留签名校验、任务保护与失败恢复机制。\r\n\r\n## 安装与升级\r\n- 0.4.1 及以前版本：请下载本页 EXE，保存工作并退出旧程序后手动安装一次。旧 ZIP 更新通道保持原兼容版本，不会自动升级至 0.4.2。\r\n- 新安装：在“应用设置 → 本地识别模型 → 导入模型”选择本页文档模型包、验证码模型包，无需解压；也可使用“下载模型”。已有模型显示就绪时无需重新导入。\r\n- 只提供 Windows 10/11 x64 EXE，不提供本版 MSI。默认当前用户安装；自选位置超出应用内更新支持范围时，使用安装包手动升级。\r\n- 模型导入后可离线识别。新电脑若没有 WebView2，安装引导仍需要联网安装该运行库。\r\n\r\n## 验证范围\r\n本版已完成打包后端的离线模型导入及实际推理、重启持久化、旧库升级与异常数据库保护，以及安装包内容、生产前端内嵌和静态运行库核对。本次更名包另行验证 Windows Sandbox 新装、旧名称升级、自选目录保留、快捷方式、模型缓存和卸载；沙盒提供独立映射的 WebView2 运行环境，未验证无 WebView2 时的联网安装，也未重新执行完整签名更新失败回滚。\r\n\r\nGitee 提供分卷手动下载，GitHub 提供完整安装包。源码保持私有；仅供学习交流，不用于商业用途。第三方组件按各自许可证提供，详见 third-party.zip；安装包未取得 Windows Authenticode 签名，更新签名与文件 SHA-256 校验另行提供。\r\n\r\n## Gitee 分卷安装\r\n\r\n从本页下载全部 .001、.002 分卷及 install.cmd、merge-install.ps1、split-installer.json，放在同一可写文件夹后双击 install.cmd。脚本逐卷检查并还原原版 EXE，完整 SHA-256 校验通过后启动安装。缺卷或损坏会停止；无需安装压缩软件。详见 INSTALL_README.txt。",
+  "pub_date": "2026-09-22T13:08:45Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcitrWG5XSzFWMUtPZzlDQnN0a2tNcndCTjBSclV6TWoxWVlVNHA5K0l6UnVpQUIvcUk5dS84K2RCcmIxbUdORWNOYkxraGsvbXdhVDhEblBlRDlTQXdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDgyNTIxCWZpbGU6Qmlhb3NodV8wLjQuMl94NjQtc2V0dXAuZXhlCmNSZ1JySDhtbHhaTTlqaTJTbkU1NTl1R1RtQ25jMURlZ2NEZCt1WHdOcCszOVEvQmRRcmN2MnRmNzJVcUhSVk9ZOStwQWxuYkI0QUttWXBndnNHd0RRPT0K"
+    }
+  }
+}

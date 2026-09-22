@@ -8,7 +8,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法容纳本版完整安装包和程序更新包；程序下载与更新目前均由 GitHub 提供。
+Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.2)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
 
 **1. 安装工作台**
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
@@ -65,9 +65,9 @@ Gitee 模型修复文件已可用。Gitee 单个附件上限为 100 MB，无法�
 
 ## 当前分发安排与验证记录
 
-**0.4.2** 使用精简 EXE 和独立模型包；程序安装包与 EXE 更新清单由 GitHub 提供，更新时验证包签名。模型可下载或离线导入，旧模型修复文件继续保留。
+**0.4.2** 使用精简 EXE 和独立模型包；完整程序安装包由 GitHub 提供，EXE 更新清单优先 Gitee、备用 GitHub；Gitee 提供手动安装分卷，应用内更新不支持分卷，更新时验证包签名。模型可下载或离线导入，旧模型修复文件继续保留。
 
-GitHub 保留程序历史版本。Gitee 目前仅同步使用说明与模型修复文件，不作为程序发布源或更新备用源。
+GitHub 保留程序历史版本。Gitee 提供最新程序的分卷手动安装、使用说明与模型修复文件；清单可从 Gitee 获取，但分卷模式的完整 EXE 下载仍使用 GitHub。
 
 [阅读完整版本说明 →](RELEASE_NOTES.md)
 

@@ -8,7 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe"><strong>下载 Windows 安装包 ↗</strong></a>
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.2"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -34,7 +35,7 @@
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
-本主页在 GitHub 与 Gitee 同步展示。**程序下载与更新仅通过 GitHub 提供**；Gitee 保留功能介绍、使用帮助和模型修复下载。0.4.2 使用精简安装包，识别模型可按需下载或离线导入；已有匹配模型继续复用。
+本次重新发布 0.4.2，增加 Gitee 分卷手动安装入口，并修复更新清单和完整安装包下载的双源回退。已安装旧 0.4.2 的用户不会因版本号相同收到升级提示，请手动安装本次制品。Gitee 分卷仅支持手动合并安装，应用内更新仍依赖完整 EXE 下载，当前完整 EXE 由 GitHub 提供。
 
 ---
 
