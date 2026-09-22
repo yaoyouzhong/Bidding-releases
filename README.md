@@ -13,9 +13,9 @@
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
-  <a href="#开始使用">开始使用</a>
+  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html">下载安装指南</a>
   &nbsp; · &nbsp;
-  <a href="#自动更新">自动更新</a>
+  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html">日常使用指南</a>
 </p>
 
 ## 50 秒了解标证 · 投标编审系统
@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 <p align="center"><sub>Windows 10 / 11 · x64 &nbsp;&nbsp; | &nbsp;&nbsp; 本地解析与文字识别 &nbsp;&nbsp; | &nbsp;&nbsp; AI 增强按需开启</sub></p>
 
 <p align="center">
-  <a href="HELP.md">使用帮助</a> &nbsp; · &nbsp;
+  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html">下载安装指南</a> · <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html">日常使用指南</a> &nbsp; · &nbsp;
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
@@ -153,31 +153,14 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 
 最终由用户核实问题、完成人工终审，归档投标原件与复核记录，便于回查。归档后仍需自行递交。
 
-## 开始使用
+## 两份图文指南，从这里开始
 
-在 Windows 10 / 11 64 位电脑上下载安装包，首次安装请保持联网。文字识别模型可在应用设置下载或离线导入，无需接入 AI；企业信用查询和学信网学历核验需要 Google Chrome。
+| 你现在要做什么 | 打开哪一份 |
+| --- | --- |
+| 第一次下载、安装程序、准备识别模型，或解决安装问题 | [下载安装指南（网页版）](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html) · [保存 PDF](guides/installation-guide.pdf) |
+| 整理资料、编制项目、检查与处理问题、终审归档、备份升级 | [日常使用指南（网页版）](https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html) · [保存 PDF](guides/daily-use-guide.pdf) |
 
-1. **建立资料基础**：创建投标人和项目，导入企业、人员及案例资料，核对后归档。
-2. **按本次要求编制**：导入招标文件，确认要求和模板，选择本次使用的材料与人员。
-3. **检查并处理问题**：对照原件复核发现，完成整改与人工终审，再保存交付归档。
-
-[下载 Windows 版 0.4.2 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe) · [安装与使用帮助](HELP.md)
-
-## 模型与程序分开安装
-
-在「应用设置 → 本地识别模型」中，可在线下载，或直接导入含多个模型文件的 ZIP 包，无需手动解压。也支持单个或多个 ONNX 文件。
-
-![0.4.2 本地识别模型：缺模型提示、ZIP 导入与独立模型保存位置（合成演示）](assets/screen-models-042.png)
-
-模型保存在当前用户目录，与程序安装目录独立；选择自定义安装目录后仍可复用。Gitee 程序分卷用于手动合并安装，不能作为模型 ZIP 导入。
-
-## 自动更新
-
-0.4.1 及以前版本需手动安装一次 0.4.2，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
-
-发现新版本时，应用会提示。保存工作并等待当前任务结束后，在应用设置中点击 **“一键升级”**，完成后程序自动重启。
-
-国内手动安装可使用 Gitee 分卷；完整 EXE 和应用内更新安装包目前通过 GitHub 提供。[查看版本说明](RELEASE_NOTES.md)
+每份指南把所需步骤集中在同一份文档中，配有界面截图、操作说明和常见问题。网页版支持目录跳转和点击查看大图；PDF 可离线阅读和打印。适用版本：0.4.2。
 
 ## 资料与隐私
 
@@ -185,7 +168,7 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 
 反馈问题时，请提供脱敏的操作步骤和错误提示，不要上传真实投标材料或个人证件。
 
-[使用帮助](HELP.md) · [反馈问题](https://github.com/yaoyouzhong/Bidding-releases/issues) · [历史版本](https://github.com/yaoyouzhong/Bidding-releases/releases)
+[下载安装指南](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html) · [日常使用指南](https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html) · [反馈问题](https://github.com/yaoyouzhong/Bidding-releases/issues) · [历史版本](https://github.com/yaoyouzhong/Bidding-releases/releases)
 
 ---
 
