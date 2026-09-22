@@ -20,11 +20,11 @@
 
 ## 50 秒了解标证 · 投标编审系统
 
-演示视频使用旧名称“标书工作台”，主要流程供参考。
+2026 年 9 月更新：基于 0.4.2 界面制作，使用合成演示资料。
 
-[![播放标证 · 投标编审系统宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
+[![播放标证 · 投标编审系统宣传片](videos/poster-0.4.2.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
 
-**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro.mp4)
+**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.2.mp4)
 
 50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
 
@@ -51,7 +51,7 @@
 
 下面选四个场景，沿着一次操作的前后过程，看工作台怎样减少重复劳动、把待处理问题交到人面前。
 
-<sub>截图使用当前程序前端与合成资料、合成结果状态，不含真实业务或个人信息。用于说明操作流程，不代表官网实测或本次后台生成验收。点击图片可查看高清原图。</sub>
+<sub>截图于 2026-09-22 使用 0.4.2 程序前端与合成资料、合成结果状态生成，不含真实业务或个人信息。用于说明操作流程，不代表官网实测或本次后台生成验收。点击图片可查看高清原图。</sub>
 
 ## 本地就能用，AI 按需增强
 
@@ -161,13 +161,21 @@
 
 [下载 Windows 版 0.4.2 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe) · [安装与使用帮助](HELP.md)
 
+## 模型与程序分开安装
+
+在「应用设置 → 本地识别模型」中，可在线下载，或直接导入含多个模型文件的 ZIP 包，无需手动解压。也支持单个或多个 ONNX 文件。
+
+![0.4.2 本地识别模型：缺模型提示、ZIP 导入与独立模型保存位置（合成演示）](assets/screen-models-042.png)
+
+模型保存在当前用户目录，与程序安装目录独立；选择自定义安装目录后仍可复用。Gitee 程序分卷用于手动合并安装，不能作为模型 ZIP 导入。
+
 ## 自动更新
 
 0.4.1 及以前版本需手动安装一次 0.4.2，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
 
 发现新版本时，应用会提示。保存工作并等待当前任务结束后，在应用设置中点击 **“一键升级”**，完成后程序自动重启。
 
-程序下载和更新目前通过 GitHub 提供。[查看版本说明](RELEASE_NOTES.md)
+国内手动安装可使用 Gitee 分卷；完整 EXE 和应用内更新安装包目前通过 GitHub 提供。[查看版本说明](RELEASE_NOTES.md)
 
 ## 资料与隐私
 
