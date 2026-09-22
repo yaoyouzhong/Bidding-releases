@@ -12,3 +12,6 @@
 MP4 SHA-256：`7ace3f2b2c0394d501f093692d37d509353d140fa23e77357db46ac72d9b29c2`
 
 网页使用带版本号的新地址避免旧缓存；无版本号地址同步为同一新视频。
+
+GitHub README 原生播放器附件：https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
+附件内容与上述 MP4 相同。
