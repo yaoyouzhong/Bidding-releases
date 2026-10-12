@@ -8,36 +8,34 @@
 </p>
 
 <p align="center">
-  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.2"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.3"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
-  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html">下载安装指南</a>
+  <a href="#开始使用">开始使用</a>
   &nbsp; · &nbsp;
-  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html">日常使用指南</a>
+  <a href="#自动更新">自动更新</a>
 </p>
 
 ## 50 秒了解标证 · 投标编审系统
 
-2026 年 9 月更新：基于 0.4.2 界面制作，使用合成演示资料。
+演示视频使用旧名称“标书工作台”，主要流程供参考。
 
-直接在本页点击播放，支持暂停、拖动进度、音量和全屏。
+[![播放标证 · 投标编审系统宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
 
-https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
-
-**[独立网页播放器 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.2.mp4)
+**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro.mp4)
 
 50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
 
 <p align="center"><sub>Windows 10 / 11 · x64 &nbsp;&nbsp; | &nbsp;&nbsp; 本地解析与文字识别 &nbsp;&nbsp; | &nbsp;&nbsp; AI 增强按需开启</sub></p>
 
 <p align="center">
-  <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html">下载安装指南</a> · <a href="https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html">日常使用指南</a> &nbsp; · &nbsp;
+  <a href="HELP.md">使用帮助</a> &nbsp; · &nbsp;
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
-本次重新发布 0.4.2，增加 Gitee 分卷手动安装入口，并修复更新清单和完整安装包下载的双源回退。已安装旧 0.4.2 的用户不会因版本号相同收到升级提示，请手动安装本次制品。Gitee 分卷仅支持手动合并安装，应用内更新仍依赖完整 EXE 下载，当前完整 EXE 由 GitHub 提供。
+本次发布 0.4.3，新增60%至125%的界面缩放，修复人员导入布局、导入批次刷新及备份恢复问题，并减少安装进度文字闪动。程序为轻量包，已导入模型可继续使用。Gitee 分卷仅支持手动合并安装，应用内更新仍依赖完整 EXE 下载，当前完整 EXE 由 GitHub 提供。
 
 ---
 
@@ -53,7 +51,7 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 
 下面选四个场景，沿着一次操作的前后过程，看工作台怎样减少重复劳动、把待处理问题交到人面前。
 
-<sub>截图于 2026-09-22 使用 0.4.2 程序前端与合成资料、合成结果状态生成，不含真实业务或个人信息。用于说明操作流程，不代表官网实测或本次后台生成验收。点击图片可查看高清原图。</sub>
+<sub>截图使用当前程序前端与合成资料、合成结果状态，不含真实业务或个人信息。用于说明操作流程，不代表官网实测或本次后台生成验收。点击图片可查看高清原图。</sub>
 
 ## 本地就能用，AI 按需增强
 
@@ -153,14 +151,23 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 
 最终由用户核实问题、完成人工终审，归档投标原件与复核记录，便于回查。归档后仍需自行递交。
 
-## 两份图文指南，从这里开始
+## 开始使用
 
-| 你现在要做什么 | 打开哪一份 |
-| --- | --- |
-| 第一次下载、安装程序、准备识别模型，或解决安装问题 | [下载安装指南（网页版）](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html) · [保存 PDF](guides/installation-guide.pdf) |
-| 整理资料、编制项目、检查与处理问题、终审归档、备份升级 | [日常使用指南（网页版）](https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html) · [保存 PDF](guides/daily-use-guide.pdf) |
+在 Windows 10 / 11 64 位电脑上下载安装包，首次安装请保持联网。文字识别模型可在应用设置下载或离线导入，无需接入 AI；企业信用查询和学信网学历核验需要 Google Chrome。
 
-每份指南把所需步骤集中在同一份文档中，配有界面截图、操作说明和常见问题。网页版支持目录跳转和点击查看大图；PDF 可离线阅读和打印。适用版本：0.4.2。
+1. **建立资料基础**：创建投标人和项目，导入企业、人员及案例资料，核对后归档。
+2. **按本次要求编制**：导入招标文件，确认要求和模板，选择本次使用的材料与人员。
+3. **检查并处理问题**：对照原件复核发现，完成整改与人工终审，再保存交付归档。
+
+[下载 Windows 版 0.4.3 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe) · [安装与使用帮助](HELP.md)
+
+## 自动更新
+
+0.4.1 及以前版本需手动安装一次 0.4.3，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
+
+发现新版本时，应用会提示。保存工作并等待当前任务结束后，在应用设置中点击 **“一键升级”**，完成后程序自动重启。
+
+程序下载和更新目前通过 GitHub 提供。[查看版本说明](RELEASE_NOTES.md)
 
 ## 资料与隐私
 
@@ -168,7 +175,7 @@ https://github.com/user-attachments/assets/97ed3dc9-5eb4-4e43-bab5-6ee1beee8aa8
 
 反馈问题时，请提供脱敏的操作步骤和错误提示，不要上传真实投标材料或个人证件。
 
-[下载安装指南](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html) · [日常使用指南](https://yaoyouzhong.github.io/Bidding-releases/guides/daily-use-guide.html) · [反馈问题](https://github.com/yaoyouzhong/Bidding-releases/issues) · [历史版本](https://github.com/yaoyouzhong/Bidding-releases/releases)
+[使用帮助](HELP.md) · [反馈问题](https://github.com/yaoyouzhong/Bidding-releases/issues) · [历史版本](https://github.com/yaoyouzhong/Bidding-releases/releases)
 
 ---
 
