@@ -8,7 +8,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.2)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
+Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.3)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
 
 **1. 安装工作台**
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
@@ -21,7 +21,7 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.2](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/Biaoshu_0.4.2_x64-setup.exe) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.3](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -29,13 +29,13 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.2/SHA256SUMS.txt) 核对文件完整性。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/SHA256SUMS.txt) 核对文件完整性。
 
 </details>
 
 ## OCR 模型
 
-0.4.2 不再内嵌模型。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
+0.4.3 不再内嵌模型。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
 
 模型默认保存在 `%LOCALAPPDATA%\BiaoShu\models`，与程序安装目录分离。模型按哈希校验和复用，新模型使用独立目录并保留旧模型。程序安装到自选目录不会搬动模型；自选目录超出应用内更新支持范围时，请手动运行安装包升级。
 
@@ -65,7 +65,7 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 
 ## 当前分发安排与验证记录
 
-**0.4.2** 使用精简 EXE 和独立模型包；完整程序安装包由 GitHub 提供，EXE 更新清单优先 Gitee、备用 GitHub；Gitee 提供手动安装分卷，应用内更新不支持分卷，更新时验证包签名。模型可下载或离线导入，旧模型修复文件继续保留。
+**0.4.3** 使用精简 EXE 和独立模型包；完整程序安装包由 GitHub 提供，EXE 更新清单优先 Gitee、备用 GitHub；Gitee 提供手动安装分卷，应用内更新不支持分卷，更新时验证包签名。模型可下载或离线导入，旧模型修复文件继续保留。
 
 GitHub 保留程序历史版本。Gitee 提供最新程序的分卷手动安装、使用说明与模型修复文件；清单可从 Gitee 获取，但分卷模式的完整 EXE 下载仍使用 GitHub。
 
@@ -74,7 +74,7 @@ GitHub 保留程序历史版本。Gitee 提供最新程序的分卷手动安装�
 <details>
 <summary><strong>已验证范围与当前边界</strong></summary>
 
-- 0.4.2 精简包的离线模型导入、OCR/验证码推理、重启持久化、旧库升级及安装包内容核对通过；本次未重新执行干净机安装/卸载或完整签名更新回滚。
+- 0.4.3通过独立Windows Sandbox分卷合并、干净安装、真实前端启动、旧版自选目录升级、模型缓存和数据保留及卸载检查；其他专项证据按适用范围复用。
 - 历史 0.4.1 内置四个固定模型，冻结引擎模型检查与 Beta 验证码识别通过。
 - v0.4.0 EXE 与 MSI 分别完成独立 Windows Sandbox 安装生命周期与合成业务验证。
 - v0.3.0 → v0.4.0 的正常升级与中断恢复已验证，并核对项目数据库保持不变。
