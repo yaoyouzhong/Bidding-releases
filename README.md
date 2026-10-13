@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.3"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.6"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -20,7 +20,7 @@
 
 ## 50 秒了解标证 · 投标编审系统
 
-演示视频使用旧名称“标书工作台”，主要流程供参考。
+2026年10月更新：保留主要业务流程，加入 Codex 接入、已保存模型和软件更新。
 
 [![播放标证 · 投标编审系统宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
 
@@ -35,7 +35,7 @@
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
-本次发布 0.4.3，新增60%至125%的界面缩放，修复人员导入布局、导入批次刷新及备份恢复问题，并减少安装进度文字闪动。程序为轻量包，已导入模型可继续使用。Gitee 分卷仅支持手动合并安装，应用内更新仍依赖完整 EXE 下载，当前完整 EXE 由 GitHub 提供。
+本次发布 0.4.6：新增可选 Codex 本机订阅接入，保留 API 配置；优化模型配置、界面缩放和升级提醒，并修复人员归档与简历导出。此次为内嵌四个本地识别模型的完整安装包，已有匹配缓存继续复用。Gitee 提供三卷手动安装，应用内更新仍需下载 GitHub 完整 EXE。
 
 ---
 
@@ -60,6 +60,20 @@
 **需要进一步理解复杂内容时，再开启 AI。** AI 在本地处理的基础上，辅助理解不同写法的招标要求、不同版式的材料，以及要求和响应之间的关系；这些增强功能需要配置模型并开启相应用途。未开启 AI 时，继续使用本地功能，不会因此无法使用整个工作台。
 
 文档解析、文字识别等基础处理在本机完成，无需接入在线 AI。企业信用查询、学信网学历核验，以及程序版本检查和下载安装更新需要联网。
+
+## API 与 Codex，两种接入可手动选择
+
+0.4.6 在“应用设置 → 大模型配置”增加 **Codex（本机订阅登录）**。已安装官方 Codex CLI 并使用 ChatGPT 登录时，可选择模型、保存配置；不需要填写 API Key。保存后显示在“已保存模型”列表，测试连接，再点击“设为默认”。原 API 配置继续保留；需要切换时由用户选择。
+
+![Codex 接入和已保存模型列表；真实组件、合成演示状态](assets/screen-codex-046.png)
+
+本机登录仍会把本次任务所需文本和图片发送给 OpenAI。项目和独立用途继续按现有授权执行；额度、登录或超时失败会明确提示，**不会自动切换收费 API**。模型结果先作为候选，由用户对照原件确认。
+
+![版本、检查按钮和结果集中展示；合成演示状态](assets/screen-update-046.png)
+
+发现新版本时，设置入口提供绿点及版本按钮。查看说明，先保存编辑、结束任务，再勾选安装确认；下载后校验更新签名。安装器尚无 Windows Authenticode 签名，下载校验不能替代发布者签名。
+
+![升级入口与保存确认；合成状态演示，不代表旧客户端界面](assets/screen-upgrade-046.png)
 
 ## AI 的价值，落在下一步能做什么
 
@@ -159,7 +173,7 @@
 2. **按本次要求编制**：导入招标文件，确认要求和模板，选择本次使用的材料与人员。
 3. **检查并处理问题**：对照原件复核发现，完成整改与人工终审，再保存交付归档。
 
-[下载 Windows 版 0.4.3 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe) · [安装与使用帮助](HELP.md)
+[下载 Windows 版 0.4.3 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe) · [安装与使用帮助](HELP.md)
 
 ## 自动更新
 

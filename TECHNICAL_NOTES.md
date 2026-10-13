@@ -8,7 +8,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.3)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
+Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.6)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
 
 **1. 安装工作台**
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
@@ -21,7 +21,7 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.3](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.6](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -29,13 +29,13 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/SHA256SUMS.txt) 核对文件完整性。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/SHA256SUMS.txt) 核对文件完整性。
 
 </details>
 
 ## OCR 模型
 
-0.4.3 不再内嵌模型。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
+0.4.6 完整包内嵌四个本地模型，首次使用会校验并复用缓存；以下 ZIP 或 ONNX 入口用于离线修复。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
 
 模型默认保存在 `%LOCALAPPDATA%\BiaoShu\models`，与程序安装目录分离。模型按哈希校验和复用，新模型使用独立目录并保留旧模型。程序安装到自选目录不会搬动模型；自选目录超出应用内更新支持范围时，请手动运行安装包升级。
 

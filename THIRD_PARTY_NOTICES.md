@@ -1,6 +1,6 @@
 # 第三方组件说明
 
-标书工作台 0.3.0 使用下列第三方组件。完整许可证原文见 licenses.zip；需提供的对应源码见 sources.zip。
+标书工作台 0.4.0 使用下列第三方组件。完整许可证原文见 licenses.zip；需提供的对应源码见 sources.zip。
 清单保守包含构建依赖，列出不代表全部组件均会在运行中加载。业务程序源码不在这些资料中。
 
 GEOS 3.13.1 采用 LGPL-2.1。用户可以为自己的使用修改使用该库的软件，并为调试这些修改进行逆向工程。
@@ -9,43 +9,12 @@ GEOS 3.13.1 采用 LGPL-2.1。用户可以为自己的使用修改使用该库�
 DirectML 1.15.4 按微软分发条款随 Windows 应用提供，不单独分发该 DLL。许可原文见 upstream/DirectML/LICENSE.txt。
 RapidOCR 模型来自 RapidAI/PaddleOCR，采用 Apache-2.0；ddddocr 模型随其 MIT 许可项目分发。模型文件与哈希见 inventory.json。
 模型来源：https://github.com/RapidAI/RapidOCR 、https://github.com/PaddlePaddle/PaddleOCR 、https://github.com/sml2h3/ddddocr 。
-Python 运行时、OpenCV、Node.js、PDFium、OpenBLAS、ONNX Runtime 的嵌套组件说明及 PyInstaller bootloader 许可例外一并保留在 licenses.zip。
+Python 运行时、OpenCV、PDFium、OpenBLAS、ONNX Runtime 的嵌套组件说明及 PyInstaller bootloader 许可例外一并保留在 licenses.zip。
+
+OCR 模型不内嵌安装包，按需下载或导入；独立模型的来源及哈希同样列于 inventory.json。
 
 | 组件 | 版本 | 许可证 |
 | --- | --- | --- |
-| PyYAML | 6.0.3 | MIT |
-| antlr4-python3-runtime | 4.9.3 | BSD |
-| certifi | 2026.7.22 | MPL-2.0 |
-| charset-normalizer | 3.4.9 | MIT |
-| colorama | 0.4.6 | 见随包原文 |
-| colorlog | 6.12.0 | MIT License |
-| cryptography | 46.0.7 | Apache-2.0 OR BSD-3-Clause |
-| cssselect | 1.5.0 | BSD-3-Clause |
-| ddddocr | 1.6.1 | 见随包原文 |
-| greenlet | 3.5.5 | MIT AND PSF-2.0 |
-| idna | 3.18 | BSD-3-Clause |
-| lxml | 6.1.1 | BSD-3-Clause |
-| numpy | 2.5.2 | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 |
-| omegaconf | 2.3.1 | 见随包原文 |
-| onnxruntime | 1.28.0 | MIT License |
-| onnxruntime-directml | 1.24.4 | MIT License |
-| packaging | 26.3 | Apache-2.0 OR BSD-2-Clause |
-| pdfminer.six | 20260107 | MIT |
-| pdfplumber | 0.11.10 | 见随包原文 |
-| pillow | 12.3.0 | MIT-CMU |
-| playwright | 1.62.0 | Apache-2.0 |
-| psutil | 7.2.2 | BSD-3-Clause |
-| pyclipper | 1.4.0 | MIT |
-| pyee | 13.0.1 | MIT |
-| pypdfium2 | 5.13.0 | BSD-3-Clause, Apache-2.0, dependency licenses |
-| python-docx | 1.2.0 | MIT |
-| rapidocr | 3.9.2 | Apache-2.0 |
-| requests | 2.34.2 | Apache-2.0 |
-| setuptools | 84.0.0 | MIT |
-| shapely | 2.1.2 | BSD 3-Clause |
-| tqdm | 4.70.0 | MPL-2.0 AND MIT |
-| typing_extensions | 4.16.0 | PSF-2.0 |
-| urllib3 | 2.7.0 | MIT |
 | adler2 | 2.0.1 | 0BSD OR MIT OR Apache-2.0 |
 | aho-corasick | 1.1.5 | Unlicense OR MIT |
 | alloc-no-stdlib | 2.0.4 | BSD-3-Clause |
@@ -369,8 +338,6 @@ Python 运行时、OpenCV、Node.js、PDFium、OpenBLAS、ONNX Runtime 的嵌套
 | @tauri-apps/plugin-opener | 2.5.4 | MIT OR Apache-2.0 |
 | @tauri-apps/api | 2.11.1 | Apache-2.0 OR MIT |
 | @tauri-apps/plugin-dialog | 2.7.2 | MIT OR Apache-2.0 |
-| opencv-python | 5.0.0.93 | Apache 2.0 |
-| pyinstaller | 6.22.0 | GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones) |
 | bzip2 | 1.0.8 | bzip2-1.0.6 |
 | libffi | 3.5.2 | MIT |
 | liblzma | 5.8.2 | 0BSD |
@@ -379,3 +346,46 @@ Python 运行时、OpenCV、Node.js、PDFium、OpenBLAS、ONNX Runtime 的嵌套
 | openssl | 3.6.3 | Apache-2.0 |
 | python | 3.12.13 | Python-2.0 |
 | sqlite | 3.52.0 | blessing |
+| antlr4-python3-runtime | 4.9.3 | BSD |
+| certifi | 2026.7.22 | MPL-2.0 |
+| charset-normalizer | 3.4.9 | MIT |
+| colorama | 0.4.6 | 见随包原文 |
+| colorlog | 6.12.0 | MIT License |
+| cryptography | 46.0.7 | Apache-2.0 OR BSD-3-Clause |
+| cssselect | 1.5.0 | BSD-3-Clause |
+| ddddocr | 1.6.1 | 见随包原文 |
+| DrissionGet | 1.2.1 | BSD |
+| DrissionPage | 4.1.1.4 | 见随包原文 |
+| DrissionRecord | 2.0.1 | MIT |
+| et_xmlfile | 2.0.0 | MIT |
+| filelock | 3.32.3 | MIT |
+| idna | 3.18 | BSD-3-Clause |
+| lxml | 6.1.1 | BSD-3-Clause |
+| numpy | 2.5.2 | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 |
+| omegaconf | 2.3.1 | 见随包原文 |
+| onnxruntime | 1.28.0 | MIT License |
+| onnxruntime-directml | 1.24.4 | MIT License |
+| opencv-python | 5.0.0.93 | Apache 2.0 |
+| openpyxl | 3.1.5 | MIT |
+| packaging | 26.3 | Apache-2.0 OR BSD-2-Clause |
+| pdfminer.six | 20260107 | MIT |
+| pdfplumber | 0.11.10 | 见随包原文 |
+| pillow | 12.3.0 | MIT-CMU |
+| psutil | 7.2.2 | BSD-3-Clause |
+| pyclipper | 1.4.0 | MIT |
+| pyinstaller | 6.22.0 | GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones) |
+| pypdfium2 | 5.13.0 | BSD-3-Clause, Apache-2.0, dependency licenses |
+| python-docx | 1.2.0 | MIT |
+| PyYAML | 6.0.3 | MIT |
+| rapidocr | 3.9.2 | Apache-2.0 |
+| requests | 2.34.2 | Apache-2.0 |
+| requests-file | 3.0.1 | Apache 2.0 |
+| setuptools | 84.0.0 | MIT |
+| shapely | 2.1.2 | BSD 3-Clause |
+| tldextract | 5.3.2 | BSD-3-Clause |
+| tqdm | 4.70.0 | MPL-2.0 AND MIT |
+| typing_extensions | 4.16.0 | PSF-2.0 |
+| urllib3 | 2.7.0 | MIT |
+| websocket-client | 1.9.0 | Apache-2.0 |
+
+| olefile | 0.47 | BSD（原文见 licenses.zip） |

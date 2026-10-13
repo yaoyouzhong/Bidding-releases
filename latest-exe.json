@@ -1,11 +1,11 @@
 {
-  "version": "0.4.3",
-  "notes": "# 标证 · 投标编审系统 v0.4.3\n\n本次为Windows x64修复版：\n- 新增60%至125%界面缩放，记住本机选择。\n- 修复选择人员资料后上传卡片变窄的问题。\r\n- 修复迟到的资料库刷新误清正在解析批次，保证已完成资料仍可单独确认。\n- 修复恢复暂存路径过长导致备份解包失败的问题。\n- 安装时保留实际进度条，减少解压百分比文字刷新带来的闪动。\n\n采用轻量安装包，模型独立提供，已导入模型可继续使用。覆盖安装无需先卸载。\nGitee提供分卷手动安装：将全部分卷与安装脚本下载到同一文件夹，双击install.cmd。脚本校验并合并后启动原版安装向导。\nGitHub提供完整EXE。应用内更新仍下载完整GitHub EXE；Gitee分卷不支持应用内自动更新。\n\n源码保持私有；第三方组件按各自许可证分发。",
-  "pub_date": "2026-10-12T04:16:05Z",
+  "version": "0.4.6",
+  "notes": "标证 0.4.6\r\n\r\n新增 Codex 本机订阅登录接入，保留原 API 配置，支持登录状态检测、连接测试及现有 AI 用途；失败时不自动切换收费 API。继续沿用用途授权、调用审计和人工复核。\r\n精简模型配置备注和布局，统一配置名称展示，保存后便于定位和手动选择默认。\r\n优化新版本绿点提示、版本按钮和升级中的状态反馈；缩放设置保持单行，软件更新区集中展示版本、按钮和结果。\r\n修复人员归档匹配、简历导出和已生成文件恢复，优化附件选项布局及导出文件名。\r\n\r\nCodex 需要本机安装官方 CLI 并使用 ChatGPT 登录；选定材料仍会发送至 OpenAI。学历识别不等于官网核验通过，扫码确认继续由用户完成。",
+  "pub_date": "2026-10-13T14:26:58Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.3/Biaoshu_0.4.3_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcnlEVU1COU1kNjBlSnZUcXAwZmxrYkJnSHJpNU1LQmVqei9FY2lLc3ZOLzFjNU81Rk1NUFJleml0ZTd4Ykw0anpTT29rT2JlVTBBZWRObE84Tyt0eXd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzc4NDkxCWZpbGU6Qmlhb3NodV8wLjQuM194NjQtc2V0dXAuZXhlClNOYmlvNU9ia3B0T1hxd2l2ODl2WjhzT212R1ErdCtCMnJqc0xwTURPZVlDY0o2T3N3azZuNUVnRmVCUzkybjVzcm5QM1BVYyt2M1p1K3dmbWNVTkJnPT0K"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcjkyQk05UmdWc0RLL3g5T21xZ2tGZVFvNkdkQTVWem4vVk9ndmJDTmFUZVE2ejRVYTdwVDJKWkVkYWt6bUhrSEt4d2h2WFgvTkZ4QVZ6Qyt1WG1hamc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTAxNTIxCWZpbGU6Qmlhb3NodV8wLjQuNl94NjQtc2V0dXAuZXhlCkp4bVhHNjN2TjBiN1NlbGpGNW1KelVZeENnK3VYSDBNWGRyQVE5TTJ4R3BaVXZSYXRYWHpCYWNudVBKdGp5RHpLOUd0UFF4TEJtZTgvbndIYTNaT0FBPT0K",
+      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe"
     }
   }
 }
