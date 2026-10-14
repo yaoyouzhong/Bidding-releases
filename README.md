@@ -198,3 +198,7 @@
 [第三方组件说明](THIRD_PARTY_NOTICES.md) · [技术与维护说明](TECHNICAL_NOTES.md)
 
 <p align="center"><sub>标证 · 投标编审系统 · 整理有序，复核有据。</sub></p>
+
+
+<!-- distribution-assets-compact -->
+程序下载页只保留安装文件、更新所需文件、校验和及完整第三方资料归档。手册、界面截图和总览视频继续在[产品主页](https://yaoyouzhong.github.io/Bidding-releases/)查看；模型修复包集中在[独立模型下载页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)（[GitHub 备用](https://github.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)）。0.4.6 安装器仍为已发布的完整包，后续默认安装与升级包将不内嵌模型，已有匹配缓存继续复用。
