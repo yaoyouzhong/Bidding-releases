@@ -8,7 +8,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.7)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
+Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.7)，每卷不超过 32 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
 
 **1. 安装工作台**
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。

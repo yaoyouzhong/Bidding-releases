@@ -8,7 +8,7 @@
 - 简历附件支持清晰压缩与保留原图；附件优化保留来源哈希映射，备份恢复包含映射。
 - 轻量程序包约 116.3 MiB，不内嵌模型；按 SHA-256 校验和复用独立模型缓存。
 
-Windows 10/11 x64。Gitee 下载全部两卷及 install.cmd、merge-install.ps1、split-installer.json 到同一目录，运行 install.cmd 校验合并；GitHub 直接下载完整 EXE。缺卷或哈希不符不得安装。Gitee 分卷仅用于手动安装，应用内更新仍指向 GitHub 完整 EXE。
+Windows 10/11 x64。Gitee 下载全部四卷及 install.cmd、merge-install.ps1、split-installer.json 到同一目录，运行 install.cmd 校验合并；GitHub 直接下载完整 EXE。缺卷或哈希不符不得安装。Gitee 分卷仅用于手动安装，应用内更新仍指向 GitHub 完整 EXE。
 
 首次使用文字识别，请在应用设置下载缺失模型，或从独立模型 Release 下载文档/验证码 ZIP 后导入。已有缓存就绪时无需重新下载。首次安装 WebView2 建议联网。
 
