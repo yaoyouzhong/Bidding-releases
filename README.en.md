@@ -1,0 +1,1 @@
+BiaoZheng 0.4.7 for Windows x64. Personnel import and resume export improvements, editable Word tables, lightweight installer and reusable separate OCR models. See [Chinese documentation](README.md). For learning and exchange only; no commercial use. [Install guide](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html).

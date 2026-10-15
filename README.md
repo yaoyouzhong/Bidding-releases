@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.6"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
-  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
+  <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.7"><strong>国内分卷下载 · Gitee ↗</strong></a> ·
+  <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.7/Biaoshu_0.4.7_x64-setup.exe"><strong>下载完整安装包 · GitHub ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yaoyouzhong/Bidding-releases/releases/latest">版本与下载</a>
   &nbsp; · &nbsp;
@@ -20,11 +20,11 @@
 
 ## 50 秒了解标证 · 投标编审系统
 
-2026年10月更新：保留主要业务流程，加入 Codex 接入、已保存模型和软件更新。
+0.4.7 更新：人员资料逐项核对、简历附件质量选择与轻量安装。
 
-[![播放标证 · 投标编审系统宣传片](videos/poster.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
+[![播放标证 · 投标编审系统宣传片](videos/poster-0.4.7.png)](https://yaoyouzhong.github.io/Bidding-releases/#film)
 
-**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro.mp4)
+**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/#film)** · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.7.mp4)
 
 50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
 
@@ -35,7 +35,17 @@
   <a href="https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1">模型修复文件 · Gitee</a>
 </p>
 
-本次发布 0.4.6：新增可选 Codex 本机订阅接入，保留 API 配置；优化模型配置、界面缩放和升级提醒，并修复人员归档与简历导出。此次为内嵌四个本地识别模型的完整安装包，已有匹配缓存继续复用。Gitee 提供三卷手动安装，应用内更新仍需下载 GitHub 完整 EXE。
+本次发布 0.4.7：完善人员目录、多文件导入与逐项核对，修复资料分类和姓名关联，改善批量选择与简历生成反馈，并修复 Word 导出残留只读保护的问题，文字和原生表格可继续编辑。简历附件支持清晰压缩或保留原图。安装包约 116.3 MiB，不内嵌识别模型；已有匹配缓存继续复用，新电脑可下载或离线导入模型。Gitee 提供两卷手动安装，应用内更新仍需下载 GitHub 完整 EXE。
+
+## 0.4.7 界面更新
+
+人员资料与简历生成使用当前前端组件及合成资料，保留人工核对边界。
+
+![人员档案](assets/screen-personnel-047.png)
+
+![多文件逐项核对](assets/screen-imports-047.png)
+
+![项目简历生成](assets/screen-resume-047.png)
 
 ---
 
@@ -173,11 +183,11 @@
 2. **按本次要求编制**：导入招标文件，确认要求和模板，选择本次使用的材料与人员。
 3. **检查并处理问题**：对照原件复核发现，完成整改与人工终审，再保存交付归档。
 
-[下载 Windows 版 0.4.3 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe) · [安装与使用帮助](HELP.md)
+[下载 Windows 版 0.4.7 ↗](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.7/Biaoshu_0.4.7_x64-setup.exe) · [安装与使用帮助](HELP.md)
 
 ## 自动更新
 
-0.4.1 及以前版本需手动安装一次 0.4.3，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
+0.4.1 及以前版本需手动安装一次 0.4.7，旧 ZIP 通道不投放新 EXE。后续升级使用新版 EXE 更新通道。
 
 发现新版本时，应用会提示。保存工作并等待当前任务结束后，在应用设置中点击 **“一键升级”**，完成后程序自动重启。
 
@@ -201,4 +211,6 @@
 
 
 <!-- distribution-assets-compact -->
-程序下载页只保留安装文件、更新所需文件、校验和及完整第三方资料归档。手册、界面截图和总览视频继续在[产品主页](https://yaoyouzhong.github.io/Bidding-releases/)查看；模型修复包集中在[独立模型下载页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)（[GitHub 备用](https://github.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)）。0.4.6 安装器仍为已发布的完整包，后续默认安装与升级包将不内嵌模型，已有匹配缓存继续复用。
+程序下载页只保留安装文件、更新所需文件、校验和及完整第三方资料归档。手册、界面截图和总览视频继续在[产品主页](https://yaoyouzhong.github.io/Bidding-releases/)查看；模型修复包集中在[独立模型下载页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)（[GitHub 备用](https://github.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)）。0.4.7 默认安装与升级包不内嵌模型，已有匹配缓存继续复用；新电脑需先准备模型。
+
+重新导出时会带入已保存的项目岗位，并保留已明确设置的项目经理等角色；人员清单与简历中的岗位保持一致。旧文件需要重新导出，原件与已保存选择继续保留。

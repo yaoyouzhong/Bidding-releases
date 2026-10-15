@@ -8,7 +8,7 @@
 
 [程序下载 · GitHub](https://github.com/yaoyouzhong/Bidding-releases/releases) · [模型修复 · Gitee](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)
 
-Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.6)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
+Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/v0.4.7)，每卷不超过 90 MiB，合并后与 GitHub 完整 EXE 字节一致，原更新签名保持有效。应用内更新暂不支持分卷。
 
 **1. 安装工作台**
 普通用户选择 **EXE 安装包**，保留默认安装位置即可使用应用内更新。无需另装 Python、Node 或 Rust。
@@ -21,7 +21,7 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 
 | 安装方式 | 适合的使用方式 | 下载 |
 | :--- | :--- | :--- |
-| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.6](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe) |
+| **EXE · 推荐** | 当前用户安装，支持应用内更新 | [下载 0.4.7](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.7/Biaoshu_0.4.7_x64-setup.exe) |
 
 <details>
 <summary><strong>安装环境与下载校验</strong></summary>
@@ -29,13 +29,13 @@ Gitee 提供[分卷手动安装](https://gitee.com/yaoyouzhong/Bidding-releases/
 - 支持 Windows 10 / 11 x64。
 - 界面使用 Microsoft Edge WebView2，首次安装建议保持联网。
 - 企业信用与学历官网查询需要安装 Google Chrome；需要人工验证时，按官网提示操作。
-- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/SHA256SUMS.txt) 核对文件完整性。
+- 安装包尚未取得 Windows Authenticode 签名；可通过同版 [SHA256SUMS.txt](https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.7/SHA256SUMS.txt) 核对文件完整性。
 
 </details>
 
 ## OCR 模型
 
-0.4.6 完整包内嵌四个本地模型，首次使用会校验并复用缓存；以下 ZIP 或 ONNX 入口用于离线修复。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
+0.4.7 默认安装包不内嵌模型；已有匹配缓存继续复用，以下 ZIP 或 ONNX 入口用于首次离线准备或修复。文档模型包包含检测、识别、方向三个模型，验证码包包含 Beta 模型。在应用设置中下载或导入 ZIP/ONNX 文件后使用；已就绪的模型无需重复下载。
 
 模型默认保存在 `%LOCALAPPDATA%\BiaoShu\models`，与程序安装目录分离。模型按哈希校验和复用，新模型使用独立目录并保留旧模型。程序安装到自选目录不会搬动模型；自选目录超出应用内更新支持范围时，请手动运行安装包升级。
 
@@ -96,4 +96,8 @@ Release 中的 `licenses.zip` 提供第三方许可证原文，`sources.zip` 仅
 
 
 <!-- distribution-assets-compact -->
-程序下载页只保留安装文件、更新所需文件、校验和及完整第三方资料归档。手册、界面截图和总览视频继续在[产品主页](https://yaoyouzhong.github.io/Bidding-releases/)查看；模型修复包集中在[独立模型下载页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)（[GitHub 备用](https://github.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)）。0.4.6 安装器仍为已发布的完整包，后续默认安装与升级包将不内嵌模型，已有匹配缓存继续复用。
+程序下载页只保留安装文件、更新所需文件、校验和及完整第三方资料归档。手册、界面截图和总览视频继续在[产品主页](https://yaoyouzhong.github.io/Bidding-releases/)查看；模型修复包集中在[独立模型下载页](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)（[GitHub 备用](https://github.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)）。0.4.7 默认安装与升级包不内嵌模型，已有匹配缓存继续复用；新电脑需先准备模型。
+
+## 0.4.7 验证范围
+
+本版包含人员与简历 Word 可编辑性修复。修复后源码回归1692通过、0失败、0跳过；新制品350项打包审计通过，实际打包后端通过受保护模板的导出与持久化链路；两种图片质量生成的Word均在真实Word中通过文字修改、插入行列、保存重开验证。最终安装包在离线Windows Sandbox、预置固定WebView2环境下完成全新安装、启动和卸载11项冒烟；安装器、更新助手和前端逻辑未变，复用上一轮54项安装、覆盖升级与MSI验证；不代表首次WebView2联网下载或全部真实投标材料业务验收。

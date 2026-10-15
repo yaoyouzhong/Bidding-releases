@@ -1,11 +1,11 @@
 {
-  "version": "0.4.6",
-  "notes": "标证 0.4.6\r\n\r\n新增 Codex 本机订阅登录接入，保留原 API 配置，支持登录状态检测、连接测试及现有 AI 用途；失败时不自动切换收费 API。继续沿用用途授权、调用审计和人工复核。\r\n精简模型配置备注和布局，统一配置名称展示，保存后便于定位和手动选择默认。\r\n优化新版本绿点提示、版本按钮和升级中的状态反馈；缩放设置保持单行，软件更新区集中展示版本、按钮和结果。\r\n修复人员归档匹配、简历导出和已生成文件恢复，优化附件选项布局及导出文件名。\r\n\r\nCodex 需要本机安装官方 CLI 并使用 ChatGPT 登录；选定材料仍会发送至 OpenAI。学历识别不等于官网核验通过，扫码确认继续由用户完成。",
-  "pub_date": "2026-10-13T14:26:58Z",
+  "version": "0.4.7",
+  "notes": "# 标证 0.4.7 · 2026-10-15\n\n- 完善人员目录、多文件导入、逐项核对及重复资料处理，保留原件来源和人工确认。\n- 修复资料分类、Excel 图片提取、姓名及曾用名关联、学信网证书姓名选择。\n- 改善筛选、批量选择、核验进度和简历生成反馈。\n- 修复重新导出时已保存项目岗位未带入的问题，补齐空缺岗位并保留明确的项目经理设置。\n- 修复导出继承模板只读保护的问题；新生成Word可编辑文字、插入表格行列，旧文件需重新导出或使用可编辑副本。\n- 简历附件支持清晰压缩与保留原图；附件优化保留来源哈希映射，备份恢复包含映射。\n- 轻量程序包约 116.3 MiB，不内嵌模型；按 SHA-256 校验和复用独立模型缓存。\n\nWindows 10/11 x64。Gitee 下载全部两卷及 install.cmd、merge-install.ps1、split-installer.json 到同一目录，运行 install.cmd 校验合并；GitHub 直接下载完整 EXE。缺卷或哈希不符不得安装。Gitee 分卷仅用于手动安装，应用内更新仍指向 GitHub 完整 EXE。\n\n首次使用文字识别，请在应用设置下载缺失模型，或从独立模型 Release 下载文档/验证码 ZIP 后导入。已有缓存就绪时无需重新下载。首次安装 WebView2 建议联网。\n\n[下载安装指南](https://yaoyouzhong.github.io/Bidding-releases/guides/installation-guide.html) · [主页与更新视频](https://yaoyouzhong.github.io/Bidding-releases/) · [独立模型](https://gitee.com/yaoyouzhong/Bidding-releases/releases/tag/models-v1)\n\n本地源代码测试 1692 项通过；打包审计、签名校验、人员简历链路与 Windows Sandbox 安装/覆盖升级/卸载验证通过。界面素材使用合成数据；不代表全部真实材料业务验收。安装器暂无 Windows Authenticode 发布者签名；更新签名与 SHA-256 用于完整性核验。仅供学习与交流，不用于商业用途。\n",
+  "pub_date": "2026-10-15T13:06:06Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcjkyQk05UmdWc0RLL3g5T21xZ2tGZVFvNkdkQTVWem4vVk9ndmJDTmFUZVE2ejRVYTdwVDJKWkVkYWt6bUhrSEt4d2h2WFgvTkZ4QVZ6Qyt1WG1hamc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTAxNTIxCWZpbGU6Qmlhb3NodV8wLjQuNl94NjQtc2V0dXAuZXhlCkp4bVhHNjN2TjBiN1NlbGpGNW1KelVZeENnK3VYSDBNWGRyQVE5TTJ4R3BaVXZSYXRYWHpCYWNudVBKdGp5RHpLOUd0UFF4TEJtZTgvbndIYTNaT0FBPT0K",
-      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.6/Biaoshu_0.4.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSzdCRExmUmNUcncvNzgzc29heTY3c3hieHlJSXhkNmh3Smg4dlA3YS9lVlpicmI1UHVJc2FZaXFmdjBEQ3BHUFJreGZQZE5pOENTcUJQdnd4Z3BVNHRZV0EyTStOK1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDY5NTU5CWZpbGU6Qmlhb3NodV8wLjQuN194NjQtc2V0dXAuZXhlCkplL0N4cU9GYmZjMUJTOU1vNERoZS8rdExrSVMvL3hWdGZmRlVUeW91cW9CQ0N5MDBWT25CeWttV0w0bnFqU1BLWWliYWVGVnBzMXZGOW1WcXkyS0J3PT0K",
+      "url": "https://github.com/yaoyouzhong/Bidding-releases/releases/download/v0.4.7/Biaoshu_0.4.7_x64-setup.exe"
     }
   }
 }
