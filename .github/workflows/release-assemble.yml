@@ -1,0 +1,41 @@
+name: Assemble verified release chunks
+run-name: Assemble ${{ inputs.installer_sha256 }}
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        description: Existing draft distribution release ID
+        required: true
+        type: string
+      installer_sha256:
+        description: Approved original installer SHA-256
+        required: true
+        type: string
+      manifest_sha256:
+        description: Approved transport manifest SHA-256
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: release-assembly-${{ inputs.release_id }}
+  cancel-in-progress: false
+jobs:
+  assemble:
+    if: github.repository == 'yaoyouzhong/Bidding-releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_ID: ${{ inputs.release_id }}
+      INSTALLER_SHA256: ${{ inputs.installer_sha256 }}
+      MANIFEST_SHA256: ${{ inputs.manifest_sha256 }}
+    steps:
+      - name: Load reviewed assembly helper from this exact workflow commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/contents/.github/scripts/assemble_release.py?ref=$GITHUB_SHA" --jq .content | base64 --decode > "$RUNNER_TEMP/assemble_release.py"
+      - name: Verify chunks, assemble bytes and upload full installer to existing draft
+        shell: bash
+        run: python3 "$RUNNER_TEMP/assemble_release.py"
