@@ -28,6 +28,7 @@
   const play = () => {
     const currentAttempt = ++attempt;
     video.controls = true;
+    video.preload = 'auto';
     film.scrollIntoView({block: 'center', behavior: 'instant'});
     if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) video.load();
     wait();
