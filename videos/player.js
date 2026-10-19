@@ -13,11 +13,11 @@
     start.textContent = name === 'error' ? '重试播放' : '播放宣传片';
   };
   const wait = () => {
+    if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) { fail(); return; }
     clearTimeout(timeout);
     state('loading', '视频加载中…');
     timeout = setTimeout(() => {
-      video.pause();
-      state('error', '视频加载较慢，请重试，或使用下方的直接观看入口。');
+      state('loading', '视频加载较慢，仍在缓冲。可稍候或使用下方的直接观看入口。');
     }, 20000);
   };
   const fail = () => {
@@ -46,6 +46,7 @@
   });
   video.addEventListener('ended', () => { clearTimeout(timeout); state('ended'); start.textContent = '重新播放'; });
   video.addEventListener('error', fail);
+  video.querySelectorAll('source').forEach(source => source.addEventListener('error', fail));
   video.controls = false;
   state('idle');
 })();
