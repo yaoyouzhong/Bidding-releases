@@ -24,7 +24,7 @@
 
 [![播放标证 · 投标编审系统宣传片](videos/poster-cover-20261019.png)](https://yaoyouzhong.github.io/Bidding-releases/watch.html)
 
-**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/watch.html)** · [直接打开视频](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.7.mp4) · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.7.mp4)
+**[打开网页直接播放 ▶](https://yaoyouzhong.github.io/Bidding-releases/watch.html)** · [直接打开视频](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.7-full-20261019.mp4) · [下载 MP4](https://yaoyouzhong.github.io/Bidding-releases/videos/biaoshu-intro-0.4.7-full-20261019.mp4)
 
 50 秒 · 1080p · 真实界面与合成演示数据 · 原创配乐与音效。播放页面支持暂停、拖动进度、音量和全屏。
 
